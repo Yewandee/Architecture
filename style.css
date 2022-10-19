@@ -1,0 +1,142 @@
+:root {
+    --primary: #B78D65;
+    --light: #F8F8F8;
+    --dark: #252525;
+}
+
+.butn{
+    background-color: #B78D65;
+    border: #B78D65;
+}
+
+/*** Section Title ***/
+.section-title {
+    color: var(--primary);
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+/*** Facts ***/
+
+.card-icon {
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    margin-bottom: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border-radius: 120px;
+    transition: .5s;
+    margin-left: 75px;
+}
+
+.card-body:hover .card-icon {
+    background: var(--dark);
+}
+
+.card-body .card-icon i {
+    color: var(--primary);
+    transition: .5;
+}
+
+.fact-item:hover .fact-icon i {
+    color: #FFFFFF;
+}
+
+/* ----------ABOUT US -------------- */
+.about-img{
+    position: relative;
+    height: 100%;
+    min-height: 400px;
+}
+.about-img img{
+    position: absolute;
+    width: 60%;
+    height: 80%;
+    object-fit: cover;
+}
+.about-img img:last-child{
+    margin: 20% 0 0 40%;
+}
+
+.about-img::before{
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 80%;
+    top: 10%;
+    left: 20%;
+    border: 5px solid var(--primary);
+    z-index: -1;
+}
+.about-text h4{
+    color: #B78D65;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cont{
+    border: 5px solid #B78D65;
+    width: 120px;
+    height: 120px; 
+}
+
+
+/*** Service ***/
+.service-item .bg-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.service-item .service-text {
+    background: var(--light);
+    /* transition: .5s; */
+}
+
+.service-item:hover .service-text {
+    background: rgba(0, 0, 0, .7);
+}
+
+.service-item * {
+    transition: .5;
+}
+
+.service-item:hover * {
+    color: #FFFFFF;
+}
+
+.service-item .btn {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    color: var(--dark);
+    background: #FFFFFF;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.service-item:hover .btn {
+    width: 140px;
+}
+
+
+
+/* ------FOOTER--------- */
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: #777777;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+    text-decoration: none;
+    
+}
